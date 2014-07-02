@@ -1,0 +1,112 @@
+body{
+	font-family: Tahoma, Geneva, sans-serif;
+}
+
+p{
+	font-size: 24px;
+}
+
+h2{
+	font-size: 32px;
+	margin: 0;
+}
+
+#accordion{
+	width: 992px;
+	padding: 32px;
+}
+
+#accordion section{
+	border: 1px solid #144a78;
+	background: #144a78;
+	background: -webkit-linear-gradient(#5387b4, #144a78);
+    background: -o-linear-gradient(#5387b4, #144a78);
+    background: -moz-linear-gradient(#5387b4, #144a78);
+    background: linear-gradient(#5387b4, #144a78);
+	border-radius: 10px;
+	margin-bottom: 32px;
+}
+
+#accordion section a{
+	width: 100%;
+	display: table;
+	color: #ffffff;
+	text-decoration: none;
+	font-size: 36px;
+	padding: 32px;
+	box-sizing: border-box;
+}
+
+#accordion section a span{
+	display: table-cell;
+	vertical-align: middle;
+}
+
+#accordion section a i{
+	background: url('../img/down_arrow.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: inline-block;
+	width: 52px;
+	height: 49px;
+	text-align: right;
+	display: table-cell;
+	vertical-align: middle;
+}
+
+#accordion section.active{
+	background: #144a78;
+}
+
+#accordion section.active a i{
+	background: url('../img/up_arrow.png');
+}
+
+#accordion section ul{
+	display: none;
+	background: #144a78;
+	background: -webkit-linear-gradient(#5387b4, #144a78);
+    background: -o-linear-gradient(#5387b4, #144a78);
+    background: -moz-linear-gradient(#5387b4, #144a78);
+    background: linear-gradient(#5387b4, #144a78);
+    color: #ffffff;
+    padding: 0 32px;
+    box-sizing: border-box;    
+}
+
+#accordion section.active ul{
+	display: inline-block;
+}
+
+#accordion section ul li{
+	list-style: none;
+	border-top: 1px solid #ffffff;
+	clear: both;
+	padding: 32px 0;
+}
+
+#accordion section ul li:first-child{
+	border: 0;
+}
+
+#accordion section ul li img,
+#accordion section ul li div{
+	float: left;
+}
+
+#accordion section ul li:nth-child(odd) img{
+	float: right;
+}
+
+#accordion section ul li:nth-child(even) div{
+	float: right;
+	text-align: right;
+}
+
+#accordion section ul li div{
+	width: 80%;
+}
+
+#accordion section ul li img{
+	border: 1px solid #ffffff;
+}
